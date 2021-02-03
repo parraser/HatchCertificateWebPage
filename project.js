@@ -39,7 +39,7 @@ function drawStamp() {
   
 }
 
-function = mouseClicked(){
+void mouseClicked(){
     drawStamp();
     emotion = Math.floor(random(3));
     
