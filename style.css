@@ -1,6 +1,14 @@
 html, body {
   text-align:center;
+  background-color: rgb(217, 139, 22);
+
 }
 canvas {
   display:inline-block;
 }
+
+<style>
+.Times {
+  font-family: "Times New Roman", Times, serif;
+}
+</style>
