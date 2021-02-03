@@ -5,7 +5,7 @@ function setup() {
 // Stamp Maker
 
 emotion = 0;
-function drawBackground(){
+function draw(){
   background(0);
 }
 drawBackground();
