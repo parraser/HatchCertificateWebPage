@@ -34,7 +34,7 @@ function drawStamp() {
     line (mouseX +20, mouseY +20,mouseX -20, mouseY +20);
   }
   if(emotion === 2){
-    arc(mouseX,mouseY +30, 30,30,Math.PI,0);
+    ellipse(mouseX,mouseY +30, 30,30);
   }
   
 }
