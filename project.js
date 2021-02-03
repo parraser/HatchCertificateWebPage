@@ -2,9 +2,45 @@
 function setup() {
   createCanvas(400, 400);
 }
-// Hold A Ball, basically
-function draw() {
-  background(0);
-  fill(255);
-  ellipse(mouseX, mouseY, 80, 80);
+// Stamp Maker
+
+emotion = 0;
+
+function drawStamp() {
+  strokeWeight(4);
+  fill(255,255,0);
+  ellipse(mouseX,mouseY,100,100);
+  
+  fill(0,0,0);
+  ellipse(mouseX-20,mouseY-10,15,15);
+  ellipse(mouseX+20,mouseY-10,15,15);
+  
+  noFill();
+  strokeWeight(1);
+  line(mouseX-3,mouseY-45, mouseX+2,mouseY-40);
+  line(mouseX+2,mouseY-40,mouseX-2,mouseY-35);
+  line(mouseX-2,mouseY-35, mouseX+2, mouseY-30);
+  line(mouseX+2, mouseY-30, mouseX-2, mouseY - 20);
+  
+  
+  ellipse(mouseX-20,mouseY-10,40,40);
+  ellipse(mouseX+20,mouseY-10,40,40);
+  
+  if(emotion === 0){
+    arc(mouseX,mouseY +20, 30,30,0,180);
+  }
+  
+  if(emotion === 1){
+    line (mouseX +20, mouseY +20,mouseX -20, mouseY +20);
+  }
+  if(emotion === 2){
+    arc(mouseX,mouseY +30, 30,30,180,360);
+  }
+  
+}
+
+function = mouseClicked(){
+    drawStamp();
+    emotion = Math.floor(random(3));
+    
 }
