@@ -5,7 +5,11 @@ function setup() {
 // Stamp Maker
 
 emotion = 0;
-background(0);
+function drawBackground(){
+  background(0);
+}
+drawBackground();
+
 function drawStamp() {
   strokeWeight(4);
   fill(255,255,0);
